@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStore - Your Online Music Shop</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1>MusicStore</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </nav>
+
+    <section>
+        <div class="product">
+            <div class="p1" id="videoContainer">
+                <img src="image1.jpg" alt="image1" id="videoImage">
+            </div>
+            <h2>music1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit culpa at nemo maxime modi doloribus? Vitae distinctio fuga amet.</p>
+            <p><em>₹24,999</em></p>
+
+            <button ><a href="form.html">Buy</a></button> 
+            <br>
+            <br>
+            <button ><a href="frame1.html">Tutorial</a></button>
+
+        </div>
+
+        <script>
+            // JavaScript to handle video play and disappear functionality
+            var videoContainer = document.getElementById('videoContainer');
+    
+            videoContainer.addEventListener('mouseover', function() {
+                var video = document.createElement('video');
+                video.src = 'music1.mp4'; // Replace with the actual path or URL to your video file
+                video.controls = true;
+                video.autoplay = true;
+                video.style.maxWidth = '300px';
+                video.style.maxHeight = '300px';
+                // Replace the image with the video player
+                videoContainer.innerHTML = '';
+                videoContainer.appendChild(video);
+            });
+    
+            videoContainer.addEventListener('mouseout', function() {
+                // Restore the image when the mouse leaves
+                videoContainer.innerHTML = '<img src="image1.jpg" alt="image1" id="videoImage" style="cursor: pointer;">';
+            });
+        </script>
+
+        <div class="product">
+            <div class="p1">
+                <img src="image2.jpg" alt="image2">
+            </div>
+            <h2>music2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit culpa at nemo maxime modi doloribus? Vitae distinctio fuga amet.</p>
+            <p><em>₹24,999</em></p>
+            <button ><a href="form.html">Buy</a></button> <span></span>
+            <br>
+            <br>
+            <button ><a href="frame1.html">Tutorial</a></button>
+
+        </div>
+
+        <div class="product">
+            <div class="p1">
+                <img src="image3.jpg" alt="image3">
+            </div>
+            <h2>music3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit culpa at nemo maxime modi doloribus? Vitae distinctio fuga amet.</p>
+            <p><em>₹24,999</em></p>
+            <button ><a href="form.html">Buy</a></button> <span></span>
+            <br>
+            <br>
+            <button ><a href="frame1.html">Tutorial</a></button>
+
+        </div>
+
+        <div class="product">
+            <div class="p1">
+                <img src="image4.jpg" alt="image4">
+            </div>
+            <h2>music4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit culpa at nemo maxime modi doloribus? Vitae distinctio fuga amet.</p>
+            <p><em>₹24,999</em></p>
+            <button ><a href="form.html">Buy</a></button> <span></span>
+            <br>
+            <br>
+            <button ><a href="frame1.html">Tutorial</a></button>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 MusicStore. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
